@@ -13,8 +13,8 @@ namespace ServiceFabric.Mocks.Tests.MocksTests
 			var instance = MockStatelessServiceContextFactory.Default;
 
 			Assert.IsInstanceOfType(instance, typeof(StatelessServiceContext));
-			Assert.AreEqual(new Uri(MockStatefulServiceContextFactory.ServiceName), instance.ServiceName);
-			Assert.AreEqual(MockStatefulServiceContextFactory.ServiceTypeName, instance.ServiceTypeName);
+			Assert.AreEqual(new Uri(MockStatelessServiceContextFactory.ServiceName), instance.ServiceName);
+			Assert.AreEqual(MockStatelessServiceContextFactory.ServiceTypeName, instance.ServiceTypeName);
 		}
 
 		[TestMethod]
